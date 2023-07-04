@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesudo Selector</title>
+    <style>
+        /*Changes color of the anchor tag using target property*/
+        a[target]{
+            color: violet;
+        }
+        /*Chnaging color to red who's type is text only else input's are defualt*/
+        input[type='text']{
+            border: 2px solid red;
+        }
+        /*Note if we pass parameter of target in the pesudo selector it will word with any condition like target=_bank or target=_self
+        Unless we remove the target conditon from the anchor tag*/
+        .head{
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Pesudo Selector in CSS</h1>
+    </div>
+    <h1><a href="https://www.google.com">Go to google.com</a></h1>
+    <h1><a href="https://www.google.com" target="_blank">Go to google.com</a></h1>
+
+    <form action="backend.php">
+        <p>Name: <input type="text"></p>
+        <p>Name: <input type="number"></p>
+        <p>Name: <input type="text"></p>
+    </form>
+</body>
+</html>
